@@ -12,5 +12,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("app")
 );
-
-// https://youtu.be/au_SDHTWgXw?t=4255
