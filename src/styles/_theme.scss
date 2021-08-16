@@ -1,0 +1,7 @@
+.gradient_active {
+  background: linear-gradient(
+    to right,
+    var(--bg-active-color),
+    var(--bg-active-color-dark)
+  );
+}

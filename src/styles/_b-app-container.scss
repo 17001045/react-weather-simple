@@ -1,0 +1,11 @@
+.b-app-container {
+  padding: 50px 0;
+}
+.b-app-container__content {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+}

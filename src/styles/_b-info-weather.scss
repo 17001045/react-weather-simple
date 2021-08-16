@@ -1,0 +1,48 @@
+.b-info-weather {
+  @extend .b-get-weather;
+}
+.b-info-weather__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 0 40px 0;
+  @media (max-width: 475px) {
+    width: 240px;
+    right: 20px;
+  }
+}
+.b-info-weather__temperature {
+  color: var(--text-color);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 260px;
+  h1 {
+    font-size: 150px;
+    font-weight: 900;
+    width: 80%;
+  }
+  span {
+    width: 20%;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  @media (max-width: 475px) {
+    width: 200px;
+    h1 {
+      font-size: 100px;
+    }
+  }
+}
+.b-info-weather__footer {
+  p {
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    font-size: 14px;
+  }
+}

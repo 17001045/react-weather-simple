@@ -1,0 +1,71 @@
+.b-get-weather {
+  @extend .gradient_active;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.b-get-weather__input-control {
+  width: 400px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 60% 20%;
+  margin: 0 auto;
+  position: relative;
+  height: 100px;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    justify-content: end;
+  }
+}
+.b-get-weather__input {
+  display: block;
+  width: 33ch;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+  border: none;
+  color: var(--bg-color);
+
+  @media (max-width: 600px) {
+    width: 20ch;
+  }
+}
+.b-get-weather__footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 20px 0 0 0;
+}
+.b-get-weather__submit {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 25px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s;
+  position: absolute;
+  right: 0;
+  @media (max-width: 600px) {
+    bottom: -40px;
+  }
+}
+.b-get-weather__submit:hover {
+  transform: scale(1.1);
+}
